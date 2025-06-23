@@ -1,0 +1,6 @@
+{
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.toolsEnvVars": {
+        "GO_DISABLE_PLAYGROUND_UPLOAD": "true"
+    }
+}
