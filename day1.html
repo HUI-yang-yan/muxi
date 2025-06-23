@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<body>
+    <h1>test01</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>区域</th>
+                <th>寄达地</th>
+                <th>首重（元/1000g）</th>
+                <th>续重（元/1000g）</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="region-row">
+                <td>一区</td>
+                <td>浙江、上海、江苏</td>
+                <td>6</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>江西、安徽</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr class="region-row">
+                <td>二区</td>
+                <td>吉林、黑龙江、云南</td>
+                <td>10</td>
+                <td>6</td>
+            </tr>
+            <tr class="region-row">
+                <td>三区</td>
+                <td>新疆、西藏</td>
+                <td>15</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+<head>
+    <h2>test02</h2>
+    <style>
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], 
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .checkbox-group, .radio-group {
+            margin-top: 5px;
+        }
+        .checkbox-group label, .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div class="form-group">
+            <label>头像</label>
+            <input type="file" id="avatar">
+            <p>选择文件 未选择任何文件</p>
+        </div>
+        
+        <div class="form-group">
+            <label for="nickname">昵称</label>
+            <input type="text" id="nickname" placeholder="">
+        </div>
+        
+        <div class="form-group">
+            <label>学历</label>
+            <select>
+                <option>大专</option>
+                <option>本科</option>
+                <option>硕士</option>
+                <option>博士</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>英文</label>
+            <select>
+                <option>初级</option>
+                <option>中级</option>
+                <option>高级</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>性别</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> [男]</label>
+                <label><input type="radio" name="gender" value="female"> [女]</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>爱好</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="hobby" value="movie"> [电影]</label>
+                <label><input type="checkbox" name="hobby" value="photography"> [摄影]</label>
+                <label><input type="checkbox" name="hobby" value="music"> [音乐]</label>
+                <label><input type="checkbox" name="hobby" value="reading"> [阅读]</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="signature">签名</label>
+            <textarea id="signature" rows="4" placeholder=""></textarea>
+        </div>
+        
+        <button type="submit">保存</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>快递价格表</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .region-row {
+            font-weight: bold;
+            background-color: #e6e6e6;
+        }
+    </style>
+</head>
